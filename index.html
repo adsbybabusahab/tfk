@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOSS FIXER KING - Professional Cricket Analysis</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        url('https://picsum.photos/800/1200') no-repeat center center/cover;
+            padding: 20px 15px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Card Styling */
+        .card {
+            background: linear-gradient(180deg, #0f3818 0%, #051a0a 100%);
+            border: 1px solid #1e5e29;
+            border-radius: 20px;
+            padding: 25px 20px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Profile Image */
+        .profile-container {
+            position: relative;
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            padding: 4px;
+            background: linear-gradient(135deg, #ffd700, #ffae00, #00ff66);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Main Heading */
+        .brand-name {
+            color: #ffffff;
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            color: #d1d5db;
+            font-size: 13px;
+            line-height: 1.4;
+            margin-bottom: 12px;
+            font-weight: 400;
+        }
+
+        .active-members {
+            color: #ffcc00;
+            font-weight: 700;
+            font-size: 15px;
+            margin-bottom: 18px;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .stat-box {
+            border: 1px solid #2d703a;
+            border-radius: 12px;
+            padding: 10px 5px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .stat-value {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        .stat-label {
+            color: #9ca3af;
+            font-size: 10px;
+            margin-top: 2px;
+        }
+
+        /* Features Section */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .feature-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .feature-icon {
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        .feature-text {
+            color: #a7f3d0;
+            font-size: 11px;
+        }
+
+        /* Join Button */
+        .btn-join {
+            display: block;
+            width: 100%;
+            margin-top: 15px;
+            padding: 15px 10px;
+            background: linear-gradient(180deg, #7cfc00 0%, #32cd32 100%);
+            color: #cc0000;
+            font-size: 18px;
+            font-weight: 800;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(50, 205, 50, 0.4);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn-join:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(50, 205, 50, 0.6);
+        }
+
+        .btn-join:active {
+            transform: scale(0.98);
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 25px;
+            text-align: center;
+            color: #9ca3af;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Main Card -->
+        <div class="card">
+            <!-- Profile Picture -->
+            <div class="profile-container">
+               <img src="https://i.postimg.cc/pddB4MX7/IMG-20260727-081303-958.jpg" alt="Toss Fixer King" class="profile-img">
+            </div>
+
+            <!-- Title & Info -->
+            <h1 class="brand-name">TOSS FIXER KING</h1>
+            <p class="subtitle">Real-Time Toss • Live Coverage • Instant Predictions</p>
+            <p class="active-members">55K+ Active Members</p>
+
+            <!-- Stats Box -->
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-value">26,873</div>
+                    <div class="stat-label">Match Tips</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value">99%</div>
+                    <div class="stat-label">Win Rate</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value">4.9★</div>
+                    <div class="stat-label">Rating</div>
+                </div>
+            </div>
+
+            <!-- Trust Features -->
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fa-regular fa-circle-check feature-icon"></i>
+                    <span class="feature-text">Verified</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-lock feature-icon"></i>
+                    <span class="feature-text">Secure</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-chart-line feature-icon"></i>
+                    <span class="feature-text">Profitable</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-regular fa-star feature-icon"></i>
+                    <span class="feature-text">Top Rated</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action Button -->
+        <a href="https://t.me/+ivBwiiNhrZc1ODk1" class="btn-join">
+            🚀 Join Free Telegram Channel
+        </a>
+
+        <!-- Footer -->
+        <div class="footer">
+            © 2020-26 TOSS FIXER KING™<br>
+            Professional Cricket Analysis
+        </div>
+    </div>
+
+</body>
+</html>
