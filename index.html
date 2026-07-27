@@ -139,7 +139,7 @@
             font-size: 11px;
         }
 
-        /* Join Button */
+        /* Glow & Blinking Join Button */
         .btn-join {
             display: block;
             width: 100%;
@@ -152,13 +152,29 @@
             text-align: center;
             text-decoration: none;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(50, 205, 50, 0.4);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            transition: transform 0.2s ease;
+            
+            /* Blinking aur Glowing Animation */
+            animation: glowBlink 1.5s infinite ease-in-out;
         }
 
-        .btn-join:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(50, 205, 50, 0.6);
+        /* Keyframes for Glow and Blink Animation */
+        @keyframes glowBlink {
+            0% {
+                box-shadow: 0 0 5px #32cd32, 0 0 10px #32cd32;
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                box-shadow: 0 0 20px #7cfc00, 0 0 35px #32cd32, 0 0 50px #32cd32;
+                transform: scale(1.03);
+                opacity: 0.85;
+            }
+            100% {
+                box-shadow: 0 0 5px #32cd32, 0 0 10px #32cd32;
+                transform: scale(1);
+                opacity: 1;
+            }
         }
 
         .btn-join:active {
