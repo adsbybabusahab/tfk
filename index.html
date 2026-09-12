@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1050265534302901');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1050265534302901&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <meta charset="UTF-8">
+    <!-- Ye tag lagane se mobile screen par bilkul sahi aur full size dikhega -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Toss Fixer King</title>
 
-    <!-- Font Awesome Icons ke liye -->
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1050265534302901');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1050265534302901&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -27,48 +32,50 @@ src="https://www.facebook.com/tr?id=1050265534302901&ev=PageView&noscript=1"
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            -webkit-tap-highlight-color: transparent;
         }
 
         body {
             min-height: 100vh;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            background: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.85)),
                         url('https://picsum.photos/800/1200') no-repeat center center/cover;
-            padding: 20px 15px;
+            padding: 16px;
         }
 
         .container {
             width: 100%;
-            max-width: 400px;
+            max-width: 390px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        /* Card Styling */
+        /* Main Card Styling */
         .card {
-            background: linear-gradient(180deg, #0f3818 0%, #051a0a 100%);
-            border: 1px solid #1e5e29;
-            border-radius: 20px;
-            padding: 25px 20px;
+            background: linear-gradient(180deg, #0d3815 0%, #051a09 100%);
+            border: 1.5px solid #1f6b2e;
+            border-radius: 22px;
+            padding: 24px 18px;
             width: 100%;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
         }
 
         /* Profile Image */
         .profile-container {
             position: relative;
-            width: 130px;
-            height: 130px;
-            margin: 0 auto 15px;
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 14px;
             border-radius: 50%;
-            padding: 4px;
-            background: linear-gradient(135deg, #ffd700, #ffae00, #00ff66);
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+            padding: 3.5px;
+            background: linear-gradient(135deg, #ffd700, #ff9900, #00ff66);
+            box-shadow: 0 0 18px rgba(255, 215, 0, 0.45);
         }
 
         .profile-img {
@@ -76,30 +83,33 @@ src="https://www.facebook.com/tr?id=1050265534302901&ev=PageView&noscript=1"
             height: 100%;
             border-radius: 50%;
             object-fit: cover;
+            display: block;
         }
 
-        /* Main Heading */
+        /* Brand Headings */
         .brand-name {
             color: #ffffff;
-            font-size: 26px;
+            font-size: 24px;
             font-weight: 800;
-            letter-spacing: 1px;
+            letter-spacing: 0.8px;
             margin-bottom: 6px;
+            text-transform: uppercase;
         }
 
         .subtitle {
             color: #d1d5db;
             font-size: 13px;
             line-height: 1.4;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             font-weight: 400;
         }
 
         .active-members {
             color: #ffcc00;
             font-weight: 700;
-            font-size: 15px;
+            font-size: 14px;
             margin-bottom: 18px;
+            display: inline-block;
         }
 
         /* Stats Grid */
@@ -107,110 +117,117 @@ src="https://www.facebook.com/tr?id=1050265534302901&ev=PageView&noscript=1"
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 8px;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
 
         .stat-box {
-            border: 1px solid #2d703a;
+            border: 1px solid #236330;
             border-radius: 12px;
-            padding: 10px 5px;
-            background: rgba(0, 0, 0, 0.2);
+            padding: 10px 4px;
+            background: rgba(0, 0, 0, 0.35);
         }
 
         .stat-value {
             color: #ffffff;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 800;
         }
 
         .stat-label {
             color: #9ca3af;
-            font-size: 10px;
-            margin-top: 2px;
+            font-size: 11px;
+            margin-top: 3px;
         }
 
-        /* Features Section */
+        /* Trust Features */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            margin-top: 10px;
+            gap: 6px;
+            padding-top: 6px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .feature-item {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 6px;
+            gap: 5px;
         }
 
         .feature-icon {
-            color: #ffffff;
-            font-size: 20px;
+            color: #00ff66;
+            font-size: 18px;
         }
 
         .feature-text {
-            color: #a7f3d0;
+            color: #d1fae5;
             font-size: 11px;
+            font-weight: 500;
         }
 
         /* Golden Glow & Blinking Join Button */
         .btn-join {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
             width: 100%;
-            margin-top: 15px;
-            padding: 15px 10px;
+            margin-top: 16px;
+            padding: 15px 12px;
             background: linear-gradient(180deg, #7cfc00 0%, #32cd32 100%);
-            color: #cc0000;
-            font-size: 18px;
+            color: #990000;
+            font-size: 17px;
             font-weight: 800;
-            text-align: center;
             text-decoration: none;
-            border-radius: 12px;
-            transition: transform 0.2s;
-            animation: goldenGlowBlink 1.5s infinite ease-in-out;
+            border-radius: 14px;
+            transition: transform 0.15s ease-in-out;
+            animation: goldenGlowBlink 1.4s infinite ease-in-out;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .btn-join:active {
-            transform: scale(0.98);
+            transform: scale(0.97);
         }
 
         @keyframes goldenGlowBlink {
             0% {
-                box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
+                box-shadow: 0 0 10px #ffd700, 0 0 20px rgba(255, 215, 0, 0.6);
                 opacity: 1;
             }
             50% {
-                box-shadow: 0 0 25px #ffd700, 0 0 40px #ffae00, 0 0 60px #ffd700;
-                opacity: 0.85;
-                transform: scale(1.02);
+                box-shadow: 0 0 22px #ffd700, 0 0 35px #ffae00, 0 0 45px rgba(255, 215, 0, 0.8);
+                opacity: 0.92;
+                transform: scale(1.015);
             }
             100% {
-                box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
+                box-shadow: 0 0 10px #ffd700, 0 0 20px rgba(255, 215, 0, 0.6);
                 opacity: 1;
             }
         }
 
         /* Footer */
         .footer {
-            margin-top: 25px;
+            margin-top: 20px;
             text-align: center;
             color: #9ca3af;
             font-size: 12px;
             line-height: 1.5;
+            width: 100%;
         }
 
         /* Stylish Ads Setup Badge */
         .ads-setup-box {
-            margin-top: 12px;
+            margin-top: 10px;
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            background: rgba(0, 0, 0, 0.4);
+            background: rgba(0, 0, 0, 0.45);
             border: 1px dashed #2d703a;
             padding: 6px 14px;
             border-radius: 30px;
-            backdrop-filter: blur(6px);
+            backdrop-filter: blur(8px);
         }
 
         .ads-text {
@@ -229,7 +246,7 @@ src="https://www.facebook.com/tr?id=1050265534302901&ev=PageView&noscript=1"
             display: inline-flex;
             align-items: center;
             gap: 4px;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
         }
 
         .ads-author:hover {
@@ -245,13 +262,13 @@ src="https://www.facebook.com/tr?id=1050265534302901&ev=PageView&noscript=1"
         <div class="card">
             <!-- Profile Picture -->
             <div class="profile-container">
-               <img src="https://i.postimg.cc/pddB4MX7/IMG-20260727-081303-958.jpg" alt="Ishita Tips" class="profile-img">
+               <img src="https://i.postimg.cc/pddB4MX7/IMG-20260727-081303-958.jpg" alt="Toss Fixer King" class="profile-img">
             </div>
 
             <!-- Title & Info -->
             <h1 class="brand-name">TOSS FIXER KING</h1>
             <p class="subtitle">Real-Time Toss • Live Coverage • Instant Predictions</p>
-            <p class="active-members">55K+ Active Members</p>
+            <p class="active-members">⚡ 55K+ Active Members</p>
 
             <!-- Stats Box -->
             <div class="stats-grid">
@@ -276,7 +293,7 @@ src="https://www.facebook.com/tr?id=1050265534302901&ev=PageView&noscript=1"
                     <span class="feature-text">Verified</span>
                 </div>
                 <div class="feature-item">
-                    <i class="fa-solid fa-lock feature-icon"></i>
+                    <i class="fa-solid fa-shield-halved feature-icon"></i>
                     <span class="feature-text">Secure</span>
                 </div>
                 <div class="feature-item">
