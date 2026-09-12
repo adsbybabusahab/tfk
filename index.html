@@ -168,7 +168,6 @@ src="https://www.facebook.com/tr?id=1050265534302901&ev=PageView&noscript=1"
             text-decoration: none;
             border-radius: 12px;
             transition: transform 0.2s;
-            /* Animation for Golden Glow and Blinking Effect */
             animation: goldenGlowBlink 1.5s infinite ease-in-out;
         }
 
@@ -176,7 +175,6 @@ src="https://www.facebook.com/tr?id=1050265534302901&ev=PageView&noscript=1"
             transform: scale(0.98);
         }
 
-        /* Keyframes for Golden Glow and Soft Blinking */
         @keyframes goldenGlowBlink {
             0% {
                 box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
@@ -200,6 +198,43 @@ src="https://www.facebook.com/tr?id=1050265534302901&ev=PageView&noscript=1"
             color: #9ca3af;
             font-size: 12px;
             line-height: 1.5;
+        }
+
+        /* Stylish Ads Setup Badge */
+        .ads-setup-box {
+            margin-top: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px dashed #2d703a;
+            padding: 6px 14px;
+            border-radius: 30px;
+            backdrop-filter: blur(6px);
+        }
+
+        .ads-text {
+            color: #9ca3af;
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .ads-author {
+            color: #ffd700;
+            font-weight: 700;
+            font-size: 12px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .ads-author:hover {
+            color: #00ff66;
+            text-shadow: 0 0 8px rgba(0, 255, 102, 0.8);
         }
     </style>
 </head>
@@ -258,10 +293,20 @@ src="https://www.facebook.com/tr?id=1050265534302901&ev=PageView&noscript=1"
         <!-- Call to Action Button with Golden Glow & Blink -->
         <a href="https://t.me/+E27cFaWRhH5lNzdl" class="btn-join">
             🚀 Join Free Telegram Channel
-        </a><!-- Footer -->
+        </a>
+
+        <!-- Footer -->
         <div class="footer">
             © 2020-26 TOSS FIXER KING™<br>
             Professional Cricket Analysis
+            <br>
+            <!-- Stylish Ads Setup Badge -->
+            <div class="ads-setup-box">
+                <span class="ads-text">⚡ Ads Setup by</span>
+                <a href="https://t.me/sahab164" target="_blank" rel="noopener noreferrer" class="ads-author">
+                    Babu Sahab <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
         </div>
     </div>
 
